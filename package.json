@@ -1,0 +1,32 @@
+{
+  "name": "cornerstoneSideViewLoader",
+  "version": "1.0.0",
+  "description": "utility to load sagittal and coronal view from axial dicom series",
+  "keywords": [
+    "cornerstone",
+    "medical",
+    "image",
+    "3D",
+    "DICOM",
+    "series"
+  ],
+  "main": "./dist/sideViewLoader.js",
+  "dependencies": {
+      "cornerstone-core": "^2.2.8",
+      "numjs": "^0.16.0",
+      "uuid": "^8.3.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/plantarflex/cornerstoneSideViewLoader.git"
+  },
+  "author": "plantarflex <plantarflex@naver.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/plantarflex/cornerstoneSideViewLoader/issues"
+  },
+  "homepage": "https://github.com/plantarflex/cornerstoneSideViewLoader#readme"
+}
