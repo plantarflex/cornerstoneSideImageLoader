@@ -29,12 +29,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/plantarflex/cornerstoneSideViewLoader.git"
+    "url": "git+https://github.com/plantarflex/cornerstoneSideImageLoader.git"
   },
   "author": "plantarflex <plantarflex@naver.com>",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/plantarflex/cornerstoneSideViewLoader/issues"
+    "url": "https://github.com/plantarflex/cornerstoneSideImageLoader/issues"
   },
-  "homepage": "https://github.com/plantarflex/cornerstoneSideViewLoader#readme"
+  "homepage": "https://github.com/plantarflex/cornerstoneSideImageLoader#readme"
 }
