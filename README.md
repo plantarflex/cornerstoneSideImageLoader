@@ -1,4 +1,4 @@
-# cornerstoneSideViewLoader
+# cornerstoneSideImageLoader
 
 * Pivots Axial View of CT slice images to saggital and coronal views
 * NPM Distribution is NOT READY
