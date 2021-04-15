@@ -1,4 +1,4 @@
-import * as nj from "numjs"
+import * as nj from "./lib/numjs"
 
 const getMatrix = (orientation, pixelSpacings, imagePositions) => {
   const rowPixelSpacing = pixelSpacings[0]

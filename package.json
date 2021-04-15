@@ -1,6 +1,6 @@
 {
   "name": "cornerstoneSideViewLoader",
-  "version": "1.0.0",
+  "version": "0.1.0",
   "description": "utility to load sagittal and coronal view from axial dicom series",
   "keywords": [
     "cornerstone",
@@ -10,10 +10,18 @@
     "DICOM",
     "series"
   ],
-  "main": "./dist/sideViewLoader.js",
+  "main": "./src/index.js",
   "dependencies": {
-      "cornerstone-core": "^2.2.8",
-      "numjs": "^0.16.0",
+      "cornerstone-core": "^2.3.0",
+      "cwise": "^1.0.8",
+      "deasync": "^0.1.4",
+      "lodash": "^4.11.1",
+      "ndarray": "^1.0.18",
+      "ndarray-fft": "^1.0.0",
+      "ndarray-gemm": "^1.0.0",
+      "ndarray-ops": "^1.2.2",
+      "sharp": "^0.25.2",
+      "typedarray-pool": "^1.1.0",
       "uuid": "^8.3.0"
   },
   "scripts": {
