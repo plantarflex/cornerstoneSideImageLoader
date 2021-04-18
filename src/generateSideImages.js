@@ -102,7 +102,7 @@ const saveSagittalDatas = (
   return imageIds
 }
 
-const saveSideViewImages = (images) => {
+const generateSideImages = (images) => {
   if (images.length <= 0) {
     return null
   }
@@ -183,4 +183,4 @@ const saveSideViewImages = (images) => {
   }
 }
 
-export default saveSideViewImages
+export default generateSideImages

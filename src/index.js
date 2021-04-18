@@ -5,7 +5,7 @@ import { default as loadImage } from "./loadImage"
 import { default as parseImageId } from "./parseImageId"
 import { default as register } from "./register"
 import { default as registerLoaders } from "./registerLoaders"
-import { default as saveSideViewImages } from "./saveSideViewImages"
+import { default as generateSideImages } from "./generateSideImages"
 import {
   getImageInImageLoaderCache,
   addImageLoaderCache,
@@ -13,7 +13,7 @@ import {
   resetImageLoaderCache,
 } from "./store"
 
-const sideViewLoader = {
+export {
   createImage,
   external,
   imagePosition,
@@ -21,11 +21,25 @@ const sideViewLoader = {
   parseImageId,
   register,
   registerLoaders,
-  saveSideViewImages,
+  generateSideImages,
   getImageInImageLoaderCache,
   addImageLoaderCache,
   removeImageLoaderCache,
   resetImageLoaderCache,
 }
 
-export default sideViewLoader
+export default {
+  createImage,
+  external,
+  imagePosition,
+  loadImage,
+  parseImageId,
+  register,
+  registerLoaders,
+  generateSideImages,
+  getImageInImageLoaderCache,
+  addImageLoaderCache,
+  removeImageLoaderCache,
+  resetImageLoaderCache,
+}
+
