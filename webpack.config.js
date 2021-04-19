@@ -4,8 +4,7 @@ const path = require('path');
 module.exports = {
   entry: './src/index.js',
   mode: 'development',
-	output: 
-  {
+	output: {
     filename: 'index.js',
     path: path.resolve(__dirname, 'dist'),
     library: {
@@ -20,4 +19,7 @@ module.exports = {
       extractComments: false,
     })],
   },
+  externals: {
+    'cornerstone-core': 'cornerstone-core',
+  }
 };
