@@ -1,5 +1,5 @@
 import { getImageInImageLoaderCache } from "./store"
-import external from '../externalModules.js'
+import external from './externalModules'
 
 function isModalityLUTForDisplay(sopClassUid) {
   // special case for XA and XRF
