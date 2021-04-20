@@ -1,5 +1,5 @@
 import { getImageInImageLoaderCache } from "./store"
-import cornerstone from "cornerstone-core"
+import external from '../externalModules.js'
 
 function isModalityLUTForDisplay(sopClassUid) {
   // special case for XA and XRF
@@ -11,6 +11,7 @@ function isModalityLUTForDisplay(sopClassUid) {
 }
 
 const createImage = (imageId) => {
+  const { cornerstone } = external
   const image = getImageInImageLoaderCache(imageId)
   return new Promise((resolve, reject) => {
     const voiLutModule = cornerstone.metaData.get("voiLutModule", imageId) || {}
