@@ -31,12 +31,16 @@ import cornerstone from 'cornerstone-core'
 import cornerstoneSideImageLoader, { generateSideImages } from "cornerstone-side-image-loader"
 
 cornerstoneSideImageLoader.external.cornerstone = cornerstone
-cornerstone.loadImage(imageIds[0])
-  .then(image => {
-    const { coronalImageIds, sagittalImageIds } = generateSideImages(images)
-    cornerstone.loadImage(coronalImageIds[0])
-    cornerstone.loadImage(sagittalImageIds[0])
-  })
+
+const loadAxialImages = Promise.all(
+  imageIds.map((imageId) => cornerstone.loadImage(imageId)),
+)
+loadAxialImages.then(images => {
+  const { coronalImageIds, sagittalImageIds } = generateSideImages(images)
+  // do coronal and sagittal business
+  coronalImageIds.map((imageId) => cornerstone.loadImage(imageId))
+  sagittalImageIds.map((imageId) => cornerstone.loadImage(imageId))
+})
 ```
 
 ## LICENSE
