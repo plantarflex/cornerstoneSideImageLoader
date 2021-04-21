@@ -95,13 +95,19 @@ const display = async (element, imageIds) => {
     imageIds: [...imageIds],
     currentImageIdIndex: 0,
   })
-  cornerstoneTools.addToolForElement(element, cornerstoneTools["StackScrollMouseWheelTool"])
-  cornerstoneTools.addToolForElement(element, cornerstoneTools["CrosshairsTool"])
+  cornerstoneTools.addToolForElement(
+    element,
+    cornerstoneTools["StackScrollMouseWheelTool"],
+  )
+  cornerstoneTools.addToolForElement(
+    element,
+    cornerstoneTools["CrosshairsTool"],
+  )
   cornerstoneTools.setToolActive("StackScrollMouseWheel", {
     mouseButtonMask: 0,
   })
   cornerstoneTools.setToolActive("Crosshairs", {
-    mouseButtonMask: 1,
+    mouseButtonMask: 2,
     synchronizationContext: synchronizer,
   })
   return Promise.all(
