@@ -1,5 +1,6 @@
 # cornerstoneSideImageLoader
-An image loader that reconstructs coronal and sagittal images from axial images.
+An MPR image loader that reconstructs axial images to coronal and sagittal images.
+
 <br>
 
 ![7323b53f1068](https://user-images.githubusercontent.com/31844264/115286800-7545ce80-a18a-11eb-90dd-12b5496660d8.gif)
@@ -9,7 +10,7 @@ An image loader that reconstructs coronal and sagittal images from axial images.
 * [cornerstone-core](https://github.com/cornerstonejs/cornerstone)
 
 ## Demo
-Right viewport displays original axial images. Left viewports display reconstructed coronal and sagittal images.
+Right viewport displays original axial images. Left viewports display multiplanar-reconstructed coronal and sagittal images.
 
 [LIVE DEMONSTRATION](https://plantarflex.github.io/cornerstoneSideImageLoader/)
 
