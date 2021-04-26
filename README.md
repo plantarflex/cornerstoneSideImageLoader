@@ -1,5 +1,5 @@
 # cornerstoneSideImageLoader
-An MPR image loader that reconstructs axial images to coronal and sagittal images.
+An MPR image loader that reconstructs coronal and sagittal images from axial images.
 
 <br>
 
