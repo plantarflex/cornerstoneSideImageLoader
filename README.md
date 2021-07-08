@@ -1,6 +1,6 @@
 # cornerstoneSideImageLoader
 <!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
-[![All Contributors](https://img.shields.io/badge/all_contributors-1-orange.svg?style=flat-square)](#contributors-)
+[![All Contributors](https://img.shields.io/badge/all_contributors-2-orange.svg?style=flat-square)](#contributors-)
 <!-- ALL-CONTRIBUTORS-BADGE:END -->
 An MPR image loader that reconstructs coronal and sagittal images from axial images.
 
@@ -62,6 +62,7 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
 <table>
   <tr>
     <td align="center"><a href="http://sisobus.com"><img src="https://avatars.githubusercontent.com/u/3329885?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Sangkeun Kim/김상근</b></sub></a><br /><a href="https://github.com/plantarflex/cornerstoneSideImageLoader/commits?author=sisobus" title="Code">💻</a></td>
+    <td align="center"><a href="https://github.com/plantarflex"><img src="https://avatars.githubusercontent.com/u/31844264?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Minkyu Song/송민규</b></sub></a><br /><a href="https://github.com/plantarflex/cornerstoneSideImageLoader/commits?author=plantarflex" title="Code">💻</a></td>
   </tr>
 </table>
 
