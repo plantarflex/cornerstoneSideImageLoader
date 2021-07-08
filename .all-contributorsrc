@@ -1,0 +1,24 @@
+{
+  "files": [
+    "README.md"
+  ],
+  "imageSize": 100,
+  "commit": false,
+  "contributors": [
+    {
+      "login": "sisobus",
+      "name": "Sangkeun Kim/김상근",
+      "avatar_url": "https://avatars.githubusercontent.com/u/3329885?v=4",
+      "profile": "http://sisobus.com",
+      "contributions": [
+        "code"
+      ]
+    }
+  ],
+  "contributorsPerLine": 7,
+  "projectName": "cornerstoneSideImageLoader",
+  "projectOwner": "plantarflex",
+  "repoType": "github",
+  "repoHost": "https://github.com",
+  "skipCi": true
+}
