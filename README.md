@@ -48,6 +48,10 @@ loadAxialImages.then(images => {
 })
 ```
 
+## Usage
+
+* [cornerstoneTools-SyncBrushTool](https://github.com/plantarflex/cornerstoneTools-SyncBrushTool)
+
 ## LICENSE
 
 MIT
