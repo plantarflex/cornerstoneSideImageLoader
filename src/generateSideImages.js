@@ -32,9 +32,12 @@ const saveCoronalDatas = (
     imageIds.push(imageId)
     let cnt = 0
     const newImagePixelData = getTypedArray(imageMeta)
+    let [mn, mx] = [Number.MAX_SAFE_INTEGER, Number.MIN_SAFE_INTEGER]
     for (let i = 0; i < n; i = i + 1) {
       for (let j = 0; j < columns; j = j + 1) {
         const k = columns * l + j
+        mn = Math.min(mn, pixelDatas[i][k])
+        mx = Math.max(mx, pixelDatas[i][k])
         newImagePixelData[cnt++] = pixelDatas[i][k]
       }
     }
@@ -54,6 +57,8 @@ const saveCoronalDatas = (
       originalHeight: n,
       view: "coronal",
       cosineRatio,
+      minPixelValue: mn,
+      maxPixelValue: mx,
     }
     addImageLoaderCache(imageId, newImage)
   }
@@ -74,9 +79,12 @@ const saveSagittalDatas = (
     imageIds.push(imageId)
     let cnt = 0
     const newImagePixelData = getTypedArray(imageMeta)
+    let [mn, mx] = [Number.MAX_SAFE_INTEGER, Number.MIN_SAFE_INTEGER]
     for (let i = 0; i < n; i = i + 1) {
       for (let j = 0; j < columns; j = j + 1) {
         const k = j * columns + l
+        mn = Math.min(mn, pixelDatas[i][k])
+        mx = Math.max(mx, pixelDatas[i][k])
         newImagePixelData[cnt++] = pixelDatas[i][k]
       }
     }
@@ -96,6 +104,8 @@ const saveSagittalDatas = (
       originalHeight: n,
       view: "sagittal",
       cosineRatio,
+      minPixelValue: mn,
+      maxPixelValue: mx,
     }
     addImageLoaderCache(imageId, newImage)
   }
