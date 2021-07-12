@@ -1,2 +1,1 @@
-webpack
-npm publish --access public
+webpack && npm publish --access public
