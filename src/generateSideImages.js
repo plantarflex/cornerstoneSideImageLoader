@@ -116,8 +116,6 @@ const generateSideImages = (images) => {
   if (images.length <= 0) {
     return null
   }
-  const referenceIdx = Math.floor(images.length / 2)
-  const referenceImage = images[referenceIdx]
   const baseImage = images[0]
   const lastImage = images[images.length - 1]
   const pixelDatas = images.map((image) => image.getPixelData())
@@ -130,9 +128,6 @@ const generateSideImages = (images) => {
     height: rows,
     intercept: baseImage.intercept,
     invert: baseImage.invert,
-    //TODO: unify referenceImage and baseImage
-    minPixelValue: referenceImage.minPixelValue,
-    maxPixelValue: referenceImage.maxPixelValue,
     rowPixelSpacing: baseImage.rowPixelSpacing * (columns / rows),
     rows: rows,
     sizeInBytes: pixelDatas[0].length,
