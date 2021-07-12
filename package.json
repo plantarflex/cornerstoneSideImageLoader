@@ -1,6 +1,6 @@
 {
   "name": "cornerstone-side-image-loader",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "description": "utility to load sagittal and coronal view from axial dicom series",
   "keywords": [
     "cornerstone",
