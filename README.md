@@ -26,7 +26,7 @@ $ yarn add cornerstone-side-image-loader
 or
 
 ```sh
-$ npm i cornerstonetools-side-image-loader
+$ npm i cornerstone-side-image-loader
 ```
 
 ## Example
